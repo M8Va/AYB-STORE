@@ -57,6 +57,85 @@
       }
       
       addMusic('neffex.mp3');
+      
+      // Language translation functionality
+      let currentLang = 'en';
+      const translations = {
+        'en': {
+          'welcome': 'Welcome to AYB store!',
+          'welcome_text': 'Welcome to AYB store the best store in tunisia',
+          'view_products': 'View Products',
+          'main_page': 'Main Page',
+          'products': 'Products',
+          'in_stock': 'In stock',
+          'view_details': 'View Details',
+          'stats_products': 'Products Sold',
+          'stats_customers': 'Total Customers',
+          'stats_reviews': 'Reviews Received',
+          'stats_rating': 'Average Rating',
+          'feature_delivery': 'Fast Delivery',
+          'feature_free': 'FREE',
+          'feature_service': '24/7 customer service',
+          'feature_best': 'best Service',
+          'about_us': 'about us',
+          'footer_text': 'we are a team of developers who are dedicated to providing the best possible service to our customers.',
+          'copyright': 'Copyright © AYB store 2025'
+        },
+        'ar': {
+          'welcome': 'مرحبًا بكم في متجر AYB!',
+          'welcome_text': 'مرحبًا بكم في متجر AYB أفضل متجر في تونس',
+          'view_products': 'عرض المنتجات',
+          'main_page': 'الصفحة الرئيسية',
+          'products': 'المنتجات',
+          'in_stock': 'متوفر',
+          'view_details': 'عرض التفاصيل',
+          'stats_products': 'المنتجات المباعة',
+          'stats_customers': 'إجمالي العملاء',
+          'stats_reviews': 'المراجعات المستلمة',
+          'stats_rating': 'متوسط التقييم',
+          'feature_delivery': 'توصيل سريع',
+          'feature_free': 'مجاني',
+          'feature_service': 'خدمة عملاء على مدار الساعة',
+          'feature_best': 'أفضل خدمة',
+          'about_us': 'معلومات عنا',
+          'footer_text': 'نحن فريق من المطورين المتخصصين في تقديم أفضل خدمة ممكنة لعملائنا.',
+          'copyright': 'حقوق النشر © متجر AYB 2025'
+        },
+        'fr': {
+          'welcome': 'Bienvenue à AYB store!',
+          'welcome_text': 'Bienvenue à AYB store le meilleur magasin en Tunisie',
+          'view_products': 'Voir les produits',
+          'main_page': 'Page Principale',
+          'products': 'Produits',
+          'in_stock': 'En stock',
+          'view_details': 'Voir les détails',
+          'stats_products': 'Produits Vendus',
+          'stats_customers': 'Clients Totaux',
+          'stats_reviews': 'Avis Reçus',
+          'stats_rating': 'Note Moyenne',
+          'feature_delivery': 'Livraison Rapide',
+          'feature_free': 'GRATUIT',
+          'feature_service': 'Service client 24/7',
+          'feature_best': 'Meilleur service',
+          'about_us': 'à propos de nous',
+          'footer_text': 'Nous sommes une équipe de développeurs dédiés à fournir le meilleur service possible à nos clients.',
+          'copyright': 'Copyright © AYB store 2025'
+        }
+      };
+      
+      function changeLang(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        
+        // Update all elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const key = element.getAttribute('data-i18n');
+          if (translations[lang][key]) {
+            element.innerHTML = translations[lang][key];
+          }
+        });
+      }
 
       function playTrack(index) {
         if (currentAudio) {
@@ -204,6 +283,13 @@
           <a href="https://www.instagram.com/a7med__.exe/" class="insta">
             <i class="fa-brands fa-instagram"></i>
           </a>
+          
+          <!-- Language Selector -->
+          <div class="lang-selector" style="margin-left: 15px;">
+            <button onclick="changeLang('en')" class="lang-btn">EN</button>
+            <button onclick="changeLang('ar')" class="lang-btn">عربي</button>
+            <button onclick="changeLang('fr')" class="lang-btn">FR</button>
+          </div>
         
       </div>
 
@@ -251,7 +337,7 @@
             target=""
             class="px-4 py-2 whitespace-nowrap text-base font-medium text-white"
           >
-            Main Page
+            <span data-i18n="main_page">Main Page</span>
           </a>
           
           
@@ -266,7 +352,7 @@
             target=""
             class="px-4 py-2 whitespace-nowrap text-base font-medium text-t-primary/80 hover:text-white"
           >
-            Products
+            <span data-i18n="products">Products</span>
           </a>
           
           
@@ -332,13 +418,13 @@
     <div class="container relative flex gap-12 items-center px-4 flex-col md:flex-row-reverse md:justify-between">
       <div class="flex flex-col gap-4 max-w-md text-right">
         
-          <h1 class="text-3xl font-bold text-t-primary mb-3 md:text-4xl lg:text-5xl">
+          <h1 class="text-3xl font-bold text-t-primary mb-3 md:text-4xl lg:text-5xl" data-i18n="welcome">
             Welcome to <span class="text-accent-500">AYB store</span>!
           </h1>
         
         
-          <p class="text-base text-t-primary/75 mb-3 md:text-lg">
-            Welcom to AYB store the best store in tunisia 
+          <p class="text-base text-t-primary/75 mb-3 md:text-lg" data-i18n="welcome_text">
+            Welcome to AYB store the best store in tunisia 
           </p>
           <p>
 
@@ -461,13 +547,13 @@
         <p class="text-base text-t-primary/50">
           
             
-            In stock
+            <span data-i18n="in_stock">In stock</span>
             
           
         </p>
       </div>
       <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
-        View Details
+        <span data-i18n="view_details">View Details</span>
         <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
       </div>
     </div>
@@ -576,13 +662,13 @@ In stock
         <p class="text-base text-t-primary/50">
           
             
-            In stock
+            <span data-i18n="in_stock">In stock</span>
             
           
         </p>
       </div>
       <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
-        View Details
+        <span data-i18n="view_details">View Details</span>
         <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
       </div>
     </div>
@@ -637,7 +723,7 @@ In stock
         </p>
       </div>
       <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
-        View Details
+        <span data-i18n="view_details">View Details</span>
 
         <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
       </div>
@@ -664,7 +750,7 @@ In stock
     href="#products"
     target=""
     class="inline-flex items-center gap-4 border px-6 py-2 text-sm font-semibold transition-colors ease-in-out duration-150 text-accent-500 border-accent-500 hover:bg-accent-500/10">
-    View Products
+    <span data-i18n="view_products">View Products</span>
     
     <i class="fas fa-cart-shopping fa-fw"></i>
     
@@ -743,13 +829,13 @@ In stock
         <p class="text-base text-t-primary/50">
           
             
-            In stock
+            <span data-i18n="in_stock">In stock</span>
             
           
         </p>
       </div>
       <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
-        View Details
+        <span data-i18n="view_details">View Details</span>
         <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
       </div>
     </div>
@@ -858,13 +944,13 @@ View Details
         <p class="text-base text-t-primary/50">
           
             
-            In stock
+            <span data-i18n="in_stock">In stock</span>
             
           
         </p>
       </div>
       <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
-        View Details
+        <span data-i18n="view_details">View Details</span>
         <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
       </div>
     </div>
@@ -951,7 +1037,7 @@ View Details
         </p>
       </div>
       <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
-        View Details
+        <span data-i18n="view_details">View Details</span>
         <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
       </div>
     </div>
@@ -983,7 +1069,7 @@ View Details
           149
         </p>
         <p class="text-sm font-normal uppercase text-t-primary/80 md:text-base">
-          Products Sold
+          <span data-i18n="stats_products">Products Sold</span>
         </p>
       </div>
       <div class="text-center border-b-2 border-white/5 py-4 lg:py-6">
@@ -991,7 +1077,7 @@ View Details
           141
         </p>
         <p class="text-sm font-normal uppercase text-t-primary/80 md:text-base">
-          Total Customers
+          <span data-i18n="stats_customers">Total Customers</span>
         </p>
       </div>
       <div class="text-center border-b-2 border-white/5 py-4 lg:py-6">
@@ -999,7 +1085,7 @@ View Details
           70
         </p>
         <p class="text-sm font-normal uppercase text-t-primary/80 md:text-base">
-          Reviews Received
+          <span data-i18n="stats_reviews">Reviews Received</span>
         </p>
       </div>
       <div class="text-center border-b-2 border-white/5 py-4 lg:py-6">
@@ -1007,7 +1093,7 @@ View Details
           4.8
         </p>
         <p class="text-sm font-normal uppercase text-t-primary/80 md:text-base">
-          Average Rating
+          <span data-i18n="stats_rating">Average Rating</span>
         </p>
       </div>
     </div>
@@ -1023,7 +1109,7 @@ View Details
         <div class="text-center bg-card/75 border border-white/5 p-4 lg:p-6">
           <i class="mb-2 text-accent-500 text-xl mb:mb-3 md:text-2xl lg:mb-4 lg:text-3xl fas fa-truck"></i>
           <h4 class="mb-1 text-base text-t-primary font-semibold uppercase mb:mb-1.5 lg:text-lg lg:mb-2">
-            taslim fawori 
+            <span data-i18n="feature_delivery">Fast Delivery</span>
           </h4>
           <p class="text-xs font-normal text-t-primary/80 lg:text-sm">
            
@@ -1035,7 +1121,7 @@ View Details
         <div class="text-center bg-card/75 border border-white/5 p-4 lg:p-6">
           <i class="mb-2 text-accent-500 text-xl mb:mb-3 md:text-2xl lg:mb-4 lg:text-3xl fas fa-shield"></i>
           <h4 class="mb-1 text-base text-t-primary font-semibold uppercase mb:mb-1.5 lg:text-lg lg:mb-2">
-            FREE
+            <span data-i18n="feature_free">FREE</span>
           </h4>
           <p class="text-xs font-normal text-t-primary/80 lg:text-sm">
             
@@ -1045,7 +1131,7 @@ View Details
         <div class="text-center bg-card/75 border border-white/5 p-4 lg:p-6">
           <i class="mb-2 text-accent-500 text-xl mb:mb-3 md:text-2xl lg:mb-4 lg:text-3xl fas fa-clock"></i>
           <h4 class="mb-1 text-base text-t-primary font-semibold uppercase mb:mb-1.5 lg:text-lg lg:mb-2">
-            24/7 customer service
+            <span data-i18n="feature_service">24/7 customer service</span>
           </h4>
           <p class="text-xs font-normal text-t-primary/80 lg:text-sm">
             
@@ -1055,7 +1141,7 @@ View Details
         <div class="text-center bg-card/75 border border-white/5 p-4 lg:p-6">
           <i class="mb-2 text-accent-500 text-xl mb:mb-3 md:text-2xl lg:mb-4 lg:text-3xl fas fa-box"></i>
           <h4 class="mb-1 text-base text-t-primary font-semibold uppercase mb:mb-1.5 lg:text-lg lg:mb-2">
-            best Service 
+            <span data-i18n="feature_best">best Service</span>
           </h4>
           <p class="text-xs font-normal text-t-primary/80 lg:text-sm">
             
@@ -1078,7 +1164,7 @@ View Details
     <a href="#" class="flex items-center gap-2 md:gap-4">
       
       
-        <p class="text-white font-semibold text-lg md:text-xl">about us</p>
+        <p class="text-white font-semibold text-lg md:text-xl" data-i18n="about_us">about us</p>
       
     </a>
     <div class="flex gap-3">
@@ -1099,7 +1185,7 @@ View Details
 <div class="flex flex-col flex-wrap gap-4 px-4 py-4 bg-card/25 sm:flex-row sm:items-center sm:justify-between">
   <p class="text-sm text-t-primary/80">
     
-    we are a team of developers who are dedicated to providing the best possible service to our customers.
+    <span data-i18n="footer_text">we are a team of developers who are dedicated to providing the best possible service to our customers.</span>
     
   </p>
   <div class="flex gap-3">
@@ -1177,7 +1263,7 @@ View Details
     <div class="flex flex-col flex-wrap gap-4 px-4 py-4 bg-card/25 sm:flex-row sm:items-center sm:justify-between">
       <p class="text-sm text-t-primary/80">
         
-          Copyright &copy; AYB store 2025
+          <span data-i18n="copyright">Copyright &copy; AYB store 2025</span>
         
       </p>
       <div class="flex gap-3">
@@ -1376,6 +1462,9 @@ View Details
       
       // Add additional songs to the playlist
       addMusic('wassa3.mp3');
+      
+      // Initialize the default language
+      changeLang('en');
     });
   </script>
   </body>

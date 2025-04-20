@@ -49,6 +49,75 @@ a {
 b,strong {
     font-weight: bolder
 }
+.Msp {
+    margin-left: px;
+    background: rgba(18, 18, 18, 0.8);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.music-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.music-player {
+    width: 300px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.music-player audio {
+    width: 100%;
+    height: 36px;
+    outline: none;
+}
+
+/* Spotify-like audio controls */
+audio::-webkit-media-controls-panel {
+    background: transparent;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button {
+    background-color: #1ed760;
+    border-radius: 50%;
+}
+.imgg{
+    background-color: #000;
+    color: #000000;
+    width: 400px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-left: 20px;
+}
+
+.manage-music-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1ed760;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.manage-music-btn:hover {
+    background: #1fdf64;
+    transform: scale(1.05);
+}
 
 code,kbd,pre,samp {
     font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
@@ -59,6 +128,46 @@ code,kbd,pre,samp {
 
 small {
     font-size: 80%
+}
+.dis{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-left: 20px;
+}
+.picatshuu{
+   margin-right: 1200px;
+   size: 10px;
+   width: 10px;
+   
+}
+.insta{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-left: 20px;
+}
+.about-title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 sub,sup {
@@ -94,7 +203,12 @@ button,input,optgroup,select,textarea {
     margin: 0;
     padding: 0
 }
-
+.about-p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
 button,select {
     text-transform: none
 }

@@ -1,2407 +1,1473 @@
-/*! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com*/
-*,:after,:before {
-    box-sizing: border-box;
-    border: 0 solid #e5e7eb
-}
-
-:after,:before {
-    --tw-content: ""
-}
-
-:host,html {
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    font-family: ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-feature-settings: normal;
-    font-variation-settings: normal;
-    -webkit-tap-highlight-color: transparent
-}
-
-body {
-    margin: 0;
-    line-height: inherit
-}
-
-hr {
-    height: 0;
-    color: inherit;
-    border-top-width: 1px
-}
-
-abbr:where([title]) {
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-size: inherit;
-    font-weight: inherit
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit
-}
-
-b,strong {
-    font-weight: bolder
-}
-.Msp {
-    margin-left: px;
-    background: rgba(18, 18, 18, 0.8);
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.music-controls {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.music-player {
-    width: 300px;
-    border-radius: 8px;
-    padding: 8px;
-}
-
-.spiner img{
-
-    height: 85px;
-    width: 85px;
-    border-radius: 50%;
-    border: 10px solid rgb(0, 0, 0);
-    box-shadow: rgba(0, 0, 0, 2);
-    animation: ani 6s  infinite;
-}
-@keyframes ani{
-    to{
-        transform: rotate(360deg);
-} 
-}
-body{
-    background-color: black;
-}
-.spiner1 img{
-
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 7px solid rgb(0, 0, 0);
-    box-shadow: rgba(0, 0, 0, 2);
-    animation: ani 6s  infinite;
-}
-@keyframes ani{
-    to{
-        transform: rotate(360deg);
-} 
-}
-body{
-    background-color: black;
-}
-
-
-.music-player audio {
-    width: 100%;
-    height: 36px;
-    outline: none;
-}
-
-/* Spotify-like audio controls */
-audio::-webkit-media-controls-panel {
-    background: transparent;
-}
-
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-mute-button {
-    background-color: #1ed760;
-    border-radius: 50%;
-}
-.imgg{
-    background-color: #000;
-    color: #000000;
-    width: 400px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 600;
-    transition: color 0.3s ease;
-    margin-left: 20px;
-}
-
-.manage-music-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #1ed760;
-    color: black;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-weight: 600;
-    transition: all 0.2s;
-    text-decoration: none;
-}
-
-.manage-music-btn:hover {
-    background: #1fdf64;
-    transform: scale(1.05);
-}
-
-code,kbd,pre,samp {
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-    font-feature-settings: normal;
-    font-variation-settings: normal;
-    font-size: 1em
-}
-
-small {
-    font-size: 80%
-}
-.lang-selector {
-    display: flex;
-    gap: 5px;
-}
-
-.lang-btn {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 12px;
-}
-
-.lang-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.dis{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 600;
-    transition: color 0.3s ease;
-    margin-left: 20px;
-}
-.picatshuu{
-   margin-right: 1200px;
-   size: 10px;
-   width: 10px;
-   
-}
-.insta{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 600;
-    transition: color 0.3s ease;
-    margin-left: 20px;
-}
-.about-title{
-    font-size: 2rem;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-sub,sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: initial
-}
-
-sub {
-    bottom: -.25em
-}
-
-sup {
-    top: -.5em
-}
-
-table {
-    text-indent: 0;
-    border-color: inherit;
-    border-collapse: collapse
-}
-
-button,input,optgroup,select,textarea {
-    font-family: inherit;
-    font-feature-settings: inherit;
-    font-variation-settings: inherit;
-    font-size: 100%;
-    font-weight: inherit;
-    line-height: inherit;
-    letter-spacing: inherit;
-    color: inherit;
-    margin: 0;
-    padding: 0
-}
-.about-p{
-    font-size: 1rem;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-button,select {
-    text-transform: none
-}
-
-button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]) {
-    -webkit-appearance: button;
-    background-color: initial;
-    background-image: none
-}
-
-:-moz-focusring {
-    outline: auto
-}
-
-:-moz-ui-invalid {
-    box-shadow: none
-}
-
-progress {
-    vertical-align: initial
-}
-
-::-webkit-inner-spin-button,::-webkit-outer-spin-button {
-    height: auto
-}
-
-[type=search] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px
-}
-
-::-webkit-search-decoration {
-    -webkit-appearance: none
-}
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button;
-    font: inherit
-}
-
-summary {
-    display: list-item
-}
-
-blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre {
-    margin: 0
-}
-
-fieldset {
-    margin: 0
-}
-
-fieldset,legend {
-    padding: 0
-}
-
-menu,ol,ul {
-    list-style: none;
-    margin: 0;
-    padding: 0
-}
-
-dialog {
-    padding: 0
-}
-
-textarea {
-    resize: vertical
-}
-
-input::-moz-placeholder,textarea::-moz-placeholder {
-    opacity: 1;
-    color: #9ca3af
-}
-
-input::placeholder,textarea::placeholder {
-    opacity: 1;
-    color: #9ca3af
-}
-
-[role=button],button {
-    cursor: pointer
-}
-
-:disabled {
-    cursor: default
-}
-
-audio,canvas,embed,iframe,img,object,svg,video {
-    display: block;
-    vertical-align: middle
-}
-
-img,video {
-    max-width: 100%;
-    height: auto
-}
-
-[hidden] {
-    display: none
-}
-
-*,::backdrop,:after,:before {
-    --tw-border-spacing-x: 0;
-    --tw-border-spacing-y: 0;
-    --tw-translate-x: 0;
-    --tw-translate-y: 0;
-    --tw-rotate: 0;
-    --tw-skew-x: 0;
-    --tw-skew-y: 0;
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    --tw-pan-x: ;
-    --tw-pan-y: ;
-    --tw-pinch-zoom: ;
-    --tw-scroll-snap-strictness: proximity;
-    --tw-gradient-from-position: ;
-    --tw-gradient-via-position: ;
-    --tw-gradient-to-position: ;
-    --tw-ordinal: ;
-    --tw-slashed-zero: ;
-    --tw-numeric-figure: ;
-    --tw-numeric-spacing: ;
-    --tw-numeric-fraction: ;
-    --tw-ring-inset: ;
-    --tw-ring-offset-width: 0px;
-    --tw-ring-offset-color: #fff;
-    --tw-ring-color: #3b82f680;
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    --tw-blur: ;
-    --tw-brightness: ;
-    --tw-contrast: ;
-    --tw-grayscale: ;
-    --tw-hue-rotate: ;
-    --tw-invert: ;
-    --tw-saturate: ;
-    --tw-sepia: ;
-    --tw-drop-shadow: ;
-    --tw-backdrop-blur: ;
-    --tw-backdrop-brightness: ;
-    --tw-backdrop-contrast: ;
-    --tw-backdrop-grayscale: ;
-    --tw-backdrop-hue-rotate: ;
-    --tw-backdrop-invert: ;
-    --tw-backdrop-opacity: ;
-    --tw-backdrop-saturate: ;
-    --tw-backdrop-sepia: ;
-    --tw-contain-size: ;
-    --tw-contain-layout: ;
-    --tw-contain-paint: ;
-    --tw-contain-style:
-}
-
-.container {
-    width: 100%
-}
-
-@media (min-width: 640px) {
-    .container {
-        max-width:640px
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width:768px
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        max-width:1024px
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        max-width:1280px
-    }
-}
-
-@media (min-width: 1536px) {
-    .container {
-        max-width:1536px
-    }
-}
-
-.pointer-events-none {
-    pointer-events: none
-}
-
-.fixed {
-    position: fixed
-}
-
-.absolute {
-    position: absolute
-}
-
-.relative {
-    position: relative
-}
-
-.inset-0 {
-    inset: 0
-}
-
-.-right-2 {
-    right: -.5rem
-}
-
-.-top-2 {
-    top: -.5rem
-}
-
-.bottom-4 {
-    bottom: 1rem
-}
-
-.left-0 {
-    left: 0
-}
-
-.left-4 {
-    left: 1rem
-}
-
-.right-0 {
-    right: 0
-}
-
-.right-4 {
-    right: 1rem
-}
-
-.top-1 {
-    top: .25rem
-}
-
-.-z-10 {
-    z-index: -10
-}
-
-.z-0 {
-    z-index: 0
-}
-
-.z-10 {
-    z-index: 10
-}
-
-.z-50 {
-    z-index: 50
-}
-
-.z-\[-1\] {
-    z-index: -1
-}
-
-.m-auto {
-    margin: auto
-}
-
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto
-}
-
-.my-4 {
-    margin-top: 1rem;
-    margin-bottom: 1rem
-}
-
-.-ml-px {
-    margin-left: -1px
-}
-
-.-mt-2 {
-    margin-top: -.5rem
-}
-
-.mb-1 {
-    margin-bottom: .25rem
-}
-
-.mb-16 {
-    margin-bottom: 4rem
-}
-
-.mb-2 {
-    margin-bottom: .5rem
-}
-
-.mb-3 {
-    margin-bottom: .75rem
-}
-
-.mb-4 {
-    margin-bottom: 1rem
-}
-
-.mb-8 {
-    margin-bottom: 2rem
-}
-
-.mb-px {
-    margin-bottom: 1px
-}
-
-.ml-2 {
-    margin-left: .5rem
-}
-
-.ml-3 {
-    margin-left: .75rem
-}
-
-.ml-auto {
-    margin-left: auto
-}
-
-.mr-0 {
-    margin-right: 0
-}
-
-.mr-4 {
-    margin-right: 1rem
-}
-
-.mt-1 {
-    margin-top: .25rem
-}
-
-.mt-2 {
-    margin-top: .5rem
-}
-
-.mt-3 {
-    margin-top: .75rem
-}
-
-.mt-4 {
-    margin-top: 1rem
-}
-
-.mt-6 {
-    margin-top: 1.5rem
-}
-
-.mt-8 {
-    margin-top: 2rem
-}
-
-.line-clamp-1 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1
-}
-
-.block {
-    display: block
-}
-
-.inline-block {
-    display: inline-block
-}
-
-.inline {
-    display: inline
-}
-
-.flex {
-    display: flex
-}
-
-.inline-flex {
-    display: inline-flex
-}
-
-.grid {
-    display: grid
-}
-
-.hidden {
-    display: none
-}
-
-.aspect-\[4\/3\] {
-    aspect-ratio: 4/3
-}
-
-.aspect-\[9\/16\] {
-    aspect-ratio: 9/16
-}
-
-.aspect-square {
-    aspect-ratio: 1/1
-}
-
-.aspect-video {
-    aspect-ratio: 16/9
-}
-
-.size-10 {
-    width: 2.5rem;
-    height: 2.5rem
-}
-
-.size-16 {
-    width: 4rem;
-    height: 4rem
-}
-
-.size-24 {
-    width: 6rem;
-    height: 6rem
-}
-
-.size-4 {
-    width: 1rem;
-    height: 1rem
-}
-
-.size-5 {
-    width: 1.25rem;
-    height: 1.25rem
-}
-
-.size-6 {
-    width: 1.5rem;
-    height: 1.5rem
-}
-
-.size-7 {
-    width: 1.75rem;
-    height: 1.75rem
-}
-
-.size-8 {
-    width: 2rem;
-    height: 2rem
-}
-
-.size-\[0\.625rem\] {
-    width: .625rem;
-    height: .625rem
-}
-
-.size-\[1\.125rem\] {
-    width: 1.125rem;
-    height: 1.125rem
-}
-
-.size-\[2\.875rem\] {
-    width: 2.875rem;
-    height: 2.875rem
-}
-
-.size-\[3\.75rem\] {
-    width: 3.75rem;
-    height: 3.75rem
-}
-
-.size-\[36px\] {
-    width: 36px;
-    height: 36px
-}
-
-.size-full {
-    width: 100%;
-    height: 100%
-}
-
-.h-5 {
-    height: 1.25rem
-}
-
-.h-full {
-    height: 100%
-}
-
-.max-h-0 {
-    max-height: 0
-}
-
-.max-h-10 {
-    max-height: 2.5rem
-}
-
-.min-h-\[60vh\] {
-    min-height: 60vh
-}
-
-.min-h-\[calc\(100vh-112px\)\] {
-    min-height: calc(100vh - 112px)
-}
-
-.min-h-screen {
-    min-height: 100vh
-}
-
-.w-5 {
-    width: 1.25rem
-}
-
-.w-\[65\%\] {
-    width: 65%
-}
-
-.w-\[calc\(100\%-64px\)\] {
-    width: calc(100% - 64px)
-}
-
-.w-\[calc\(100\%-72px\)\] {
-    width: calc(100% - 72px)
-}
-
-.w-full {
-    width: 100%
-}
-
-.max-w-24 {
-    max-width: 6rem
-}
-
-.max-w-32 {
-    max-width: 8rem
-}
-
-.max-w-3xl {
-    max-width: 48rem
-}
-
-.max-w-4xl {
-    max-width: 56rem
-}
-
-.max-w-\[640px\] {
-    max-width: 640px
-}
-
-.max-w-\[76rem\] {
-    max-width: 76rem
-}
-
-.max-w-\[85rem\] {
-    max-width: 85rem
-}
-
-.max-w-full {
-    max-width: 100%
-}
-
-.max-w-md {
-    max-width: 28rem
-}
-
-.max-w-xl {
-    max-width: 36rem
-}
-
-.flex-1 {
-    flex: 1 1 0%
-}
-
-.-translate-y-1\/2 {
-    --tw-translate-y: -50%
-}
-
-.-translate-y-1\/2,.translate-y-0 {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-.translate-y-0 {
-    --tw-translate-y: 0px
-}
-
-.translate-y-4 {
-    --tw-translate-y: 1rem
-}
-
-.translate-y-4,.translate-y-full {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-.translate-y-full {
-    --tw-translate-y: 100%
-}
-
-.rotate-180 {
-    --tw-rotate: 180deg
-}
-
-.rotate-180,.transform {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-@keyframes announcement-fade {
-    0% {
-        opacity: 0
-    }
-
-    50% {
-        opacity: 1
-    }
-
-    to {
-        opacity: 0
-    }
-}
-
-.animate-announcement-fade {
-    animation: announcement-fade 3s cubic-bezier(.4,0,.6,1) infinite
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(1turn)
-    }
-}
-
-.animate-spin {
-    animation: spin 1s linear infinite
-}
-
-.cursor-default {
-    cursor: default
-}
-
-.cursor-pointer {
-    cursor: pointer
-}
-
-.resize {
-    resize: both
-}
-
-.grid-cols-1 {
-    grid-template-columns: repeat(1,minmax(0,1fr))
-}
-
-.flex-col {
-    flex-direction: column
-}
-
-.flex-wrap {
-    flex-wrap: wrap
-}
-
-.items-start {
-    align-items: flex-start
-}
-
-.items-end {
-    align-items: flex-end
-}
-
-.items-center {
-    align-items: center
-}
-
-.justify-start {
-    justify-content: flex-start
-}
-
-.justify-end {
-    justify-content: flex-end
-}
-
-.justify-center {
-    justify-content: center
-}
-
-.justify-between {
-    justify-content: space-between
-}
-
-.gap-1 {
-    gap: .25rem
-}
-
-.gap-12 {
-    gap: 3rem
-}
-
-.gap-2 {
-    gap: .5rem
-}
-
-.gap-3 {
-    gap: .75rem
-}
-
-.gap-4 {
-    gap: 1rem
-}
-
-.gap-8 {
-    gap: 2rem
-}
-
-.overflow-hidden {
-    overflow: hidden
-}
-
-.overflow-y-auto {
-    overflow-y: auto
-}
-
-.scroll-smooth {
-    scroll-behavior: smooth
-}
-
-.truncate {
-    overflow: hidden;
-    text-overflow: ellipsis
-}
-
-.truncate,.whitespace-nowrap {
-    white-space: nowrap
-}
-
-.break-words {
-    overflow-wrap: break-word
-}
-
-.rounded-full {
-    border-radius: 9999px
-}
-
-.rounded-lg {
-    border-radius: .5rem
-}
-
-.rounded-md {
-    border-radius: .375rem
-}
-
-.border {
-    border-width: 1px
-}
-
-.border-2 {
-    border-width: 2px
-}
-
-.border-x {
-    border-left-width: 1px;
-    border-right-width: 1px
-}
-
-.border-b {
-    border-bottom-width: 1px
-}
-
-.border-b-2 {
-    border-bottom-width: 2px
-}
-
-.border-l-2 {
-    border-left-width: 2px
-}
-
-.border-l-4 {
-    border-left-width: 4px
-}
-
-.border-t {
-    border-top-width: 1px
-}
-
-.\!border-accent-500 {
-    --tw-border-opacity: 1!important;
-    border-color: rgba(var(--cl-accent),var(--tw-border-opacity))!important
-}
-
-.border-accent-500 {
-    --tw-border-opacity: 1;
-    border-color: rgba(var(--cl-accent),var(--tw-border-opacity))
-}
-
-.border-accent-600 {
-    --tw-border-opacity: 1;
-    border-color: color-mix(in srgb,rgba(var(--cl-accent),var(--tw-border-opacity)),#000 10%)
-}
-
-.border-accent-800 {
-    --tw-border-opacity: 1;
-    border-color: color-mix(in srgb,rgba(var(--cl-accent),var(--tw-border-opacity)),#000 50%)
-}
-
-.border-transparent {
-    border-color: #0000
-}
-
-.border-white\/5 {
-    border-color: #ffffff0d
-}
-
-.border-y-white\/5 {
-    border-top-color: #ffffff0d;
-    border-bottom-color: #ffffff0d
-}
-
-.border-l-accent-500 {
-    --tw-border-opacity: 1;
-    border-left-color: rgba(var(--cl-accent),var(--tw-border-opacity))
-}
-
-.border-t-white\/5 {
-    border-top-color: #ffffff0d
-}
-
-.bg-\[\#070d19\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(7 13 25/var(--tw-bg-opacity))
-}
-
-.bg-\[\#0c1427\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(12 20 39/var(--tw-bg-opacity))
-}
-
-.bg-\[rgba\(255\2c 255\2c 255\2c 0\.05\)\] {
-    background-color: #ffffff0d
-}
-
-.bg-accent-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(var(--cl-accent),var(--tw-bg-opacity))
-}
-
-.bg-accent-500\/10 {
-    background-color: rgba(var(--cl-accent),.1)
-}
-
-.bg-accent-500\/50 {
-    background-color: rgba(var(--cl-accent),.5)
-}
-
-.bg-accent-700 {
-    --tw-bg-opacity: 1;
-    background-color: color-mix(in srgb,rgba(var(--cl-accent),var(--tw-bg-opacity)),#000 30%)
-}
-
-.bg-background {
-    --tw-bg-opacity: 1;
-    background-color: rgba(var(--cl-background),var(--tw-bg-opacity))
-}
-
-.bg-background\/35 {
-    background-color: rgba(var(--cl-background),.35)
-}
-
-.bg-black\/75 {
-    background-color: #000000bf
-}
-
-.bg-card {
-    --tw-bg-opacity: 1;
-    background-color: rgba(var(--cl-card),var(--tw-bg-opacity))
-}
-
-.bg-card\/25 {
-    background-color: rgba(var(--cl-card),.25)
-}
-
-.bg-card\/50 {
-    background-color: rgba(var(--cl-card),.5)
-}
-
-.bg-card\/75 {
-    background-color: rgba(var(--cl-card),.75)
-}
-
-.bg-card\/90 {
-    background-color: rgba(var(--cl-card),.9)
-}
-
-.bg-red-500 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(239 68 68/var(--tw-bg-opacity))
-}
-
-.bg-transparent {
-    background-color: initial
-}
-
-.bg-white\/5 {
-    background-color: #ffffff0d
-}
-
-.bg-white\/\[0\.025\] {
-    background-color: hsla(0,0%,100%,.025)
-}
-
-.bg-none {
-    background-image: none
-}
-
-.bg-cover {
-    background-size: cover
-}
-
-.bg-center {
-    background-position: 50%
-}
-
-.object-cover {
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.object-scale-down {
-    -o-object-fit: scale-down;
-    object-fit: scale-down
-}
-
-.p-1 {
-    padding: .25rem
-}
-
-.p-1\.5 {
-    padding: .375rem
-}
-
-.p-2 {
-    padding: .5rem
-}
-
-.p-3 {
-    padding: .75rem
-}
-
-.p-4 {
-    padding: 1rem
-}
-
-.px-2 {
-    padding-left: .5rem;
-    padding-right: .5rem
-}
-
-.px-3 {
-    padding-left: .75rem;
-    padding-right: .75rem
-}
-
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem
-}
-
-.px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem
-}
-
-.px-\[0\.6875rem\] {
-    padding-left: .6875rem;
-    padding-right: .6875rem
-}
-
-.py-1 {
-    padding-top: .25rem;
-    padding-bottom: .25rem
-}
-
-.py-1\.5 {
-    padding-top: .375rem;
-    padding-bottom: .375rem
-}
-
-.py-2 {
-    padding-top: .5rem;
-    padding-bottom: .5rem
-}
-
-.py-2\.5 {
-    padding-top: .625rem;
-    padding-bottom: .625rem
-}
-
-.py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem
-}
-
-.py-3 {
-    padding-top: .75rem;
-    padding-bottom: .75rem
-}
-
-.py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem
-}
-
-.py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem
-}
-
-.py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem
-}
-
-.pb-1 {
-    padding-bottom: .25rem
-}
-
-.pb-1\.5 {
-    padding-bottom: .375rem
-}
-
-.pb-2 {
-    padding-bottom: .5rem
-}
-
-.pb-4 {
-    padding-bottom: 1rem
-}
-
-.pl-1 {
-    padding-left: .25rem
-}
-
-.pl-2 {
-    padding-left: .5rem
-}
-
-.pr-2 {
-    padding-right: .5rem
-}
-
-.pr-4 {
-    padding-right: 1rem
-}
-
-.pt-2 {
-    padding-top: .5rem
-}
-
-.text-left {
-    text-align: left
-}
-
-.text-center {
-    text-align: center
-}
-
-.text-right {
-    text-align: right
-}
-
-.align-\[-0\.125rem\] {
-    vertical-align: -.125rem
-}
-
-.text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem
-}
-
-.text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem
-}
-
-.text-5xl {
-    font-size: 3rem;
-    line-height: 1
-}
-
-.text-\[0\.625rem\] {
-    font-size: .625rem
-}
-
-.text-base {
-    font-size: 1rem;
-    line-height: 1.5rem
-}
-
-.text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem
-}
-
-.text-sm {
-    font-size: .875rem;
-    line-height: 1.25rem
-}
-
-.text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem
-}
-
-.text-xs {
-    font-size: .75rem;
-    line-height: 1rem
-}
-
-.font-bold {
-    font-weight: 700
-}
-
-.font-light {
-    font-weight: 300
-}
-
-.font-medium {
-    font-weight: 500
-}
-
-.font-normal {
-    font-weight: 400
-}
-
-.font-semibold {
-    font-weight: 600
-}
-
-.uppercase {
-    text-transform: uppercase
-}
-
-.\!leading-\[1\.125\] {
-    line-height: 1.125!important
-}
-
-.text-accent-400 {
-    --tw-text-opacity: 1;
-    color: color-mix(in srgb,rgba(var(--cl-accent),var(--tw-text-opacity)) 70%,#fff)
-}
-
-.text-accent-500 {
-    --tw-text-opacity: 1;
-    color: rgba(var(--cl-accent),var(--tw-text-opacity))
-}
-
-.text-red-500 {
-    --tw-text-opacity: 1;
-    color: rgb(239 68 68/var(--tw-text-opacity))
-}
-
-.text-t-accent {
-    --tw-text-opacity: 1;
-    color: rgba(var(--cl-t-accent),var(--tw-text-opacity))
-}
-
-.text-t-primary {
-    --tw-text-opacity: 1;
-    color: rgba(var(--cl-t-primary),var(--tw-text-opacity))
-}
-
-.text-t-primary\/50 {
-    color: rgba(var(--cl-t-primary),.5)
-}
-
-.text-t-primary\/60 {
-    color: rgba(var(--cl-t-primary),.6)
-}
-
-.text-t-primary\/70 {
-    color: rgba(var(--cl-t-primary),.7)
-}
-
-.text-t-primary\/75 {
-    color: rgba(var(--cl-t-primary),.75)
-}
-
-.text-t-primary\/80 {
-    color: rgba(var(--cl-t-primary),.8)
-}
-
-.text-t-primary\/90 {
-    color: rgba(var(--cl-t-primary),.9)
-}
-
-.text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
-}
-
-.line-through {
-    text-decoration-line: line-through
-}
-
-.opacity-0 {
-    opacity: 0
-}
-
-.opacity-100 {
-    opacity: 1
-}
-
-.opacity-50 {
-    opacity: .5
-}
-
-.shadow-2xl {
-    --tw-shadow: 0 25px 50px -12px #00000040;
-    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color)
-}
-
-.shadow-2xl,.shadow-sm {
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
-}
-
-.shadow-sm {
-    --tw-shadow: 0 1px 2px 0 #0000000d;
-    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color)
-}
-
-.outline {
-    outline-style: solid
-}
-
-.blur-\[200px\] {
-    --tw-blur: blur(200px)
-}
-
-.blur-\[200px\],.filter {
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
-}
-
-.transition {
-    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;
-    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;
-    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s
-}
-
-.transition-all {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s
-}
-
-.transition-colors {
-    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s
-}
-
-.transition-opacity {
-    transition-property: opacity;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s
-}
-
-.transition-transform {
-    transition-property: transform;
-    transition-timing-function: cubic-bezier(.4,0,.2,1)
-}
-
-.duration-150,.transition-transform {
-    transition-duration: .15s
-}
-
-.duration-200 {
-    transition-duration: .2s
-}
-
-.duration-300 {
-    transition-duration: .3s
-}
-
-.duration-500 {
-    transition-duration: .5s
-}
-
-.ease-in {
-    transition-timing-function: cubic-bezier(.4,0,1,1)
-}
-
-.ease-in-out {
-    transition-timing-function: cubic-bezier(.4,0,.2,1)
-}
-
-.ease-out {
-    transition-timing-function: cubic-bezier(0,0,.2,1)
-}
-
-:root {
-    --altcha-border-width: 1px;
-    --altcha-border-radius: 0px;
-    --altcha-color-base: hsla(0,0%,100%,.025);
-    --altcha-color-border: #ffffff0d;
-    --altcha-color-text: #fff;
-    --altcha-color-border-focus: currentColor;
-    --altcha-color-error-text: #1d4f70;
-    --altcha-color-footer-bg: #f4f4f4;
-    --altcha-max-width: 460px
-}
-
-[x-cloak] {
-    display: none!important
-}
-
-input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0
-}
-
-input[type=number] {
-    -moz-appearance: textfield
-}
-
-.pulsating {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    opacity: 0;
-    pointer-events: none;
-    animation: pulsating 1.25s linear infinite
-}
-
-@keyframes pulsating {
-    0% {
-        opacity: .4
-    }
-
-    to {
-        transform: scale(2);
-        opacity: 0
-    }
-}
-
-.editor .rtl {
-    direction: rtl
-}
-
-.editor .e-paragraph {
-    position: relative;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    word-wrap: break-word
-}
-
-.editor .e-quote {
-    font-size: 1rem;
-    padding-left: 1rem;
-    border-left: .25rem solid rgb(var(--cl-accent))
-}
-
-.editor .e-hr,.editor hr {
-    border-top: 1px solid rgb(var(--cl-accent));
-    margin: .5rem 0
-}
-
-.editor .e-heading-h1 {
-    font-size: 2.25rem;
-    line-height: 2.5rem
-}
-
-.editor .e-heading-h2 {
-    font-size: 1.875rem;
-    line-height: 2.25rem
-}
-
-.editor .e-heading-h3 {
-    font-size: 1.5rem;
-    line-height: 2rem
-}
-
-.editor .e-nested-listitem {
-    list-style-type: none
-}
-
-.editor .e-list-ol {
-    padding: 0;
-    margin: 0 0 0 1rem;
-    list-style-type: decimal
-}
-
-.editor .e-list-ul {
-    padding: 0;
-    margin: 0 0 0 1rem;
-    list-style-type: disc
-}
-
-.editor .e-listitem {
-    margin: .5rem 1rem
-}
-
-.editor .e-image img {
-    max-width: 100%;
-    height: auto
-}
-
-.editor .e-youtube iframe {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 16/9
-}
-
-.editor .e-link {
-    color: rgb(var(--cl-accent));
-    text-decoration: underline
-}
-
-.editor .e-text-bold {
-    font-weight: 700
-}
-
-.editor .e-text-code {
-    background-color: #00000080;
-    padding: .0625rem .25rem;
-    font-family: monospace;
-    font-size: 95%
-}
-
-.editor .e-text-italic {
-    font-style: italic
-}
-
-.editor .e-text-strikethrough {
-    text-decoration: line-through
-}
-
-.editor .e-text-underline {
-    text-decoration: underline
-}
-
-.editor .e-text-underlineStrikethrough {
-    text-decoration: underline line-through
-}
-
-.editor .e-code {
-    display: block;
-    background-color: #00000080;
-    padding: .5rem;
-    font-family: monospace;
-    border-radius: .5rem
-}
-
-.editor .e-collapsible {
-    margin: .25rem 0;
-    background-color: #ffffff0d;
-    border: 1px solid #ffffff0d;
-    border-radius: 6px
-}
-
-.editor .e-collapsible-title {
-    display: block;
-    position: relative;
-    padding: .5rem .5rem .5rem 1.5rem;
-    font-weight: 600
-}
-
-.editor .e-collapsible-title::-webkit-details-marker,.editor .e-collapsible-title::marker {
-    display: none
-}
-
-.editor .e-collapsible-title:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: .625rem;
-    transform: translateY(-50%);
-    border-width: 1px;
-    border-left: 6px solid #0000;
-    border-left-color: rgb(var(--cl-accent));
-    border-bottom: 4px solid #0000;
-    border-right: 6px solid #0000;
-    border-top: 4px solid #0000
-}
-
-.editor .e-collapsible[open]>.editor .e-collapsible-title:before {
-    border-left-color: #0000;
-    border-top-color: rgb(var(--cl-accent));
-    border-width: 6px 4px 0
-}
-
-.editor .e-collapsible-content {
-    padding: .5rem;
-    border-top: 1px solid #ffffff0d
-}
-
-.choices {
-    margin-bottom: 0!important
-}
-
-.choices.is-open {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
-    --tw-ring-color: rgba(var(--cl-accent),var(--tw-ring-opacity));
-    --tw-ring-opacity: 0.5
-}
-
-.choices .choices__inner {
-    min-height: 2.5rem;
-    width: 100%;
-    border-width: 0;
-    background-color: hsla(0,0%,100%,.025);
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    --tw-text-opacity: 1;
-    color: rgba(var(--cl-t-primary),var(--tw-text-opacity))
-}
-
-.choices[data-type*=select-one] .choices__inner {
-    padding: .5rem 1rem
-}
-
-.choices .choices__list.choices__list--single {
-    padding: 0
-}
-
-.choices .choices__list.choices__list--dropdown {
-    --tw-bg-opacity: 1;
-    background-color: rgba(var(--cl-background),var(--tw-bg-opacity))
-}
-
-.choices.is-open .choices__list--dropdown,.choices.is-open .choices__list[aria-expanded] {
-    border-color: #ffffff1a
-}
-
-.choices[data-type*=select-one] .choices__list .choices__input {
-    border-bottom-color: #ffffff0d
-}
-
-.choices .choices__list--dropdown .choices__item,.choices .choices__list[aria-expanded] .choices__item,.choices[data-type*=select-one] .choices__list.choices__list--dropdown .choices__input {
-    background-color: hsla(0,0%,100%,.025);
-    --tw-text-opacity: 1;
-    color: rgba(var(--cl-t-primary),var(--tw-text-opacity))
-}
-
-.choices .choices[data-type*=select-one] .choices__input,.choices .choices__list--dropdown .choices__item--selectable.is-highlighted,.choices .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
-    --tw-bg-opacity: 1;
-    background-color: rgba(var(--cl-accent),var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
-}
-
-.splide.thumbnails .splide__slide.is-active {
-    opacity: 1
-}
-
-.splide .splide__arrow {
-    background-color: rgba(var(--cl-accent),.1)
-}
-
-.splide .splide__arrow svg {
-    fill: rgba(var(--cl-accent),1)
-}
-
-body lite-youtube {
-    max-width: none
-}
-
-.grecaptcha-badge {
-    visibility: hidden
-}
-
-.builder .component {
-    position: relative
-}
-
-.builder .component .builder-toolbar {
-    z-index: 50;
-    display: none
-}
-
-.builder .component:hover .builder-toolbar {
-    display: block
-}
-
-.builder .announcement .builder-toolbar .actions button:not(.edit),.builder .footer .builder-toolbar .actions button:not(.edit),.builder .navbar .builder-toolbar .actions button:not(.edit) {
-    display: none
-}
-
-.\*\:m-auto>* {
-    margin: auto
-}
-
-.focus-within\:border-accent-500:focus-within {
-    --tw-border-opacity: 1;
-    border-color: rgba(var(--cl-accent),var(--tw-border-opacity))
-}
-
-.focus-within\:ring-2:focus-within {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-    box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)
-}
-
-.focus-within\:ring-accent-500:focus-within {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(var(--cl-accent),var(--tw-ring-opacity))
-}
-
-.focus-within\:ring-opacity-50:focus-within {
-    --tw-ring-opacity: 0.5
-}
-
-.hover\:scale-110:hover {
-    --tw-scale-x: 1.1;
-    --tw-scale-y: 1.1;
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-.hover\:bg-\[\#070d19\]:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(7 13 25/var(--tw-bg-opacity))
-}
-
-.hover\:bg-accent-500:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgba(var(--cl-accent),var(--tw-bg-opacity))
-}
-
-.hover\:bg-accent-500\/10:hover {
-    background-color: rgba(var(--cl-accent),.1)
-}
-
-.hover\:bg-accent-600:hover {
-    --tw-bg-opacity: 1;
-    background-color: color-mix(in srgb,rgba(var(--cl-accent),var(--tw-bg-opacity)),#000 10%)
-}
-
-.hover\:bg-accent-800:hover {
-    --tw-bg-opacity: 1;
-    background-color: color-mix(in srgb,rgba(var(--cl-accent),var(--tw-bg-opacity)),#000 50%)
-}
-
-.hover\:bg-white\/\[0\.025\]:hover {
-    background-color: hsla(0,0%,100%,.025)
-}
-
-.hover\:text-\[\#239cd7\]:hover {
-    --tw-text-opacity: 1;
-    color: rgb(35 156 215/var(--tw-text-opacity))
-}
-
-.hover\:text-\[\#5865f2\]:hover {
-    --tw-text-opacity: 1;
-    color: rgb(88 101 242/var(--tw-text-opacity))
-}
-
-.hover\:text-\[\#de2662\]:hover {
-    --tw-text-opacity: 1;
-    color: rgb(222 38 98/var(--tw-text-opacity))
-}
-
-.hover\:text-\[\#f62755\]:hover {
-    --tw-text-opacity: 1;
-    color: rgb(246 39 85/var(--tw-text-opacity))
-}
-
-.hover\:text-\[\#ff0000\]:hover {
-    --tw-text-opacity: 1;
-    color: rgb(255 0 0/var(--tw-text-opacity))
-}
-
-.hover\:text-accent-500:hover {
-    --tw-text-opacity: 1;
-    color: rgba(var(--cl-accent),var(--tw-text-opacity))
-}
-
-.hover\:text-white:hover {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
-}
-
-.hover\:underline:hover {
-    text-decoration-line: underline
-}
-
-.focus\:z-10:focus {
-    z-index: 10
-}
-
-.focus\:outline-none:focus {
-    outline: 2px solid #0000;
-    outline-offset: 2px
-}
-
-.hover\:enabled\:bg-accent-500\/50:enabled:hover {
-    background-color: rgba(var(--cl-accent),.5)
-}
-
-.hover\:enabled\:text-t-primary:enabled:hover {
-    --tw-text-opacity: 1;
-    color: rgba(var(--cl-t-primary),var(--tw-text-opacity))
-}
-
-.disabled\:pointer-events-none:disabled {
-    pointer-events: none
-}
-
-.disabled\:opacity-50:disabled {
-    opacity: .5
-}
-
-.group:hover .group-hover\:bg-white\/\[0\.025\] {
-    background-color: hsla(0,0%,100%,.025)
-}
-
-@media (min-width: 640px) {
-    .sm\:right-auto {
-        right:auto
-    }
-
-    .sm\:mb-0 {
-        margin-bottom: 0
-    }
-
-    .sm\:mb-0\.5 {
-        margin-bottom: .125rem
-    }
-
-    .sm\:mb-6 {
-        margin-bottom: 1.5rem
-    }
-
-    .sm\:mb-8 {
-        margin-bottom: 2rem
-    }
-
-    .sm\:mt-0 {
-        margin-top: 0
-    }
-
-    .sm\:block {
-        display: block
-    }
-
-    .sm\:flex {
-        display: flex
-    }
-
-    .sm\:hidden {
-        display: none
-    }
-
-    .sm\:size-3 {
-        width: .75rem;
-        height: .75rem
-    }
-
-    .sm\:size-5 {
-        width: 1.25rem;
-        height: 1.25rem
-    }
-
-    .sm\:size-\[4\.5rem\] {
-        width: 4.5rem;
-        height: 4.5rem
-    }
-
-    .sm\:min-w-20 {
-        min-width: 5rem
-    }
-
-    .sm\:max-w-36 {
-        max-width: 9rem
-    }
-
-    .sm\:flex-1 {
-        flex: 1 1 0%
-    }
-
-    .sm\:translate-y-0 {
-        --tw-translate-y: 0px
-    }
-
-    .sm\:scale-100,.sm\:translate-y-0 {
-        transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-    }
-
-    .sm\:scale-100 {
-        --tw-scale-x: 1;
-        --tw-scale-y: 1
-    }
-
-    .sm\:scale-95 {
-        --tw-scale-x: .95;
-        --tw-scale-y: .95;
-        transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-    }
-
-    .sm\:grid-cols-2 {
-        grid-template-columns: repeat(2,minmax(0,1fr))
-    }
-
-    .sm\:flex-row {
-        flex-direction: row
-    }
-
-    .sm\:items-center {
-        align-items: center
-    }
-
-    .sm\:justify-end {
-        justify-content: flex-end
-    }
-
-    .sm\:justify-between {
-        justify-content: space-between
-    }
-
-    .sm\:gap-1 {
-        gap: .25rem
-    }
-
-    .sm\:gap-2 {
-        gap: .5rem
-    }
-
-    .sm\:gap-3 {
-        gap: .75rem
-    }
-
-    .sm\:border-t-0 {
-        border-top-width: 0
-    }
-
-    .sm\:p-0 {
-        padding: 0
-    }
-
-    .sm\:py-0 {
-        padding-top: 0;
-        padding-bottom: 0
-    }
-
-    .sm\:py-3 {
-        padding-top: .75rem;
-        padding-bottom: .75rem
-    }
-
-    .sm\:pl-0 {
-        padding-left: 0
-    }
-
-    .sm\:pl-3 {
-        padding-left: .75rem
-    }
-
-    .sm\:pr-3 {
-        padding-right: .75rem
-    }
-
-    .sm\:text-base {
-        font-size: 1rem;
-        line-height: 1.5rem
-    }
-
-    .sm\:text-lg {
-        font-size: 1.125rem;
-        line-height: 1.75rem
-    }
-
-    .sm\:text-sm {
-        font-size: .875rem;
-        line-height: 1.25rem
-    }
-}
-
-@media (min-width: 768px) {
-    .md\:mb-1 {
-        margin-bottom:.25rem
-    }
-
-    .md\:mb-1\.5 {
-        margin-bottom: .375rem
-    }
-
-    .md\:mb-6 {
-        margin-bottom: 1.5rem
-    }
-
-    .md\:mt-1 {
-        margin-top: .25rem
-    }
-
-    .md\:mt-1\.5 {
-        margin-top: .375rem
-    }
-
-    .md\:mt-6 {
-        margin-top: 1.5rem
-    }
-
-    .md\:inline-flex {
-        display: inline-flex
-    }
-
-    .md\:hidden {
-        display: none
-    }
-
-    .md\:size-5 {
-        width: 1.25rem;
-        height: 1.25rem
-    }
-
-    .md\:\!h-auto {
-        height: auto!important
-    }
-
-    .md\:w-auto {
-        width: auto
-    }
-
-    .md\:grid-cols-2 {
-        grid-template-columns: repeat(2,minmax(0,1fr))
-    }
-
-    .md\:grid-cols-3 {
-        grid-template-columns: repeat(3,minmax(0,1fr))
-    }
-
-    .md\:flex-row {
-        flex-direction: row
-    }
-
-    .md\:flex-row-reverse {
-        flex-direction: row-reverse
-    }
-
-    .md\:items-center {
-        align-items: center
-    }
-
-    .md\:justify-start {
-        justify-content: flex-start
-    }
-
-    .md\:justify-between {
-        justify-content: space-between
-    }
-
-    .md\:gap-3 {
-        gap: .75rem
-    }
-
-    .md\:gap-3\.5 {
-        gap: .875rem
-    }
-
-    .md\:gap-4 {
-        gap: 1rem
-    }
-
-    .md\:gap-6 {
-        gap: 1.5rem
-    }
-
-    .md\:border-2 {
-        border-width: 2px
-    }
-
-    .md\:p-4 {
-        padding: 1rem
-    }
-
-    .md\:p-5 {
-        padding: 1.25rem
-    }
-
-    .md\:p-6 {
-        padding: 1.5rem
-    }
-
-    .md\:text-2xl {
-        font-size: 1.5rem;
-        line-height: 2rem
-    }
-
-    .md\:text-3xl {
-        font-size: 1.875rem;
-        line-height: 2.25rem
-    }
-
-    .md\:text-4xl {
-        font-size: 2.25rem;
-        line-height: 2.5rem
-    }
-
-    .md\:text-base {
-        font-size: 1rem;
-        line-height: 1.5rem
-    }
-
-    .md\:text-lg {
-        font-size: 1.125rem;
-        line-height: 1.75rem
-    }
-
-    .md\:text-xl {
-        font-size: 1.25rem;
-        line-height: 1.75rem
-    }
-}
-
-@media (min-width: 1024px) {
-    .lg\:mb-2 {
-        margin-bottom:.5rem
-    }
-
-    .lg\:mb-32 {
-        margin-bottom: 8rem
-    }
-
-    .lg\:mb-4 {
-        margin-bottom: 1rem
-    }
-
-    .lg\:mb-8 {
-        margin-bottom: 2rem
-    }
-
-    .lg\:mt-2 {
-        margin-top: .5rem
-    }
-
-    .lg\:mt-8 {
-        margin-top: 2rem
-    }
-
-    .lg\:w-1\/4 {
-        width: 25%
-    }
-
-    .lg\:w-2\/5 {
-        width: 40%
-    }
-
-    .lg\:w-3\/4 {
-        width: 75%
-    }
-
-    .lg\:w-3\/5 {
-        width: 60%
-    }
-
-    .lg\:max-w-\[50\%\] {
-        max-width: 50%
-    }
-
-    .lg\:grid-cols-3 {
-        grid-template-columns: repeat(3,minmax(0,1fr))
-    }
-
-    .lg\:grid-cols-4 {
-        grid-template-columns: repeat(4,minmax(0,1fr))
-    }
-
-    .lg\:flex-row {
-        flex-direction: row
-    }
-
-    .lg\:flex-row-reverse {
-        flex-direction: row-reverse
-    }
-
-    .lg\:gap-5 {
-        gap: 1.25rem
-    }
-
-    .lg\:gap-8 {
-        gap: 2rem
-    }
-
-    .lg\:p-6 {
-        padding: 1.5rem
-    }
-
-    .lg\:p-8 {
-        padding: 2rem
-    }
-
-    .lg\:py-6 {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem
-    }
-
-    .lg\:py-8 {
-        padding-top: 2rem;
-        padding-bottom: 2rem
-    }
-
-    .lg\:pr-8 {
-        padding-right: 2rem
-    }
-
-    .lg\:text-2xl {
-        font-size: 1.5rem;
-        line-height: 2rem
-    }
-
-    .lg\:text-3xl {
-        font-size: 1.875rem;
-        line-height: 2.25rem
-    }
-
-    .lg\:text-4xl {
-        font-size: 2.25rem;
-        line-height: 2.5rem
-    }
-
-    .lg\:text-5xl {
-        font-size: 3rem;
-        line-height: 1
-    }
-
-    .lg\:text-lg {
-        font-size: 1.125rem;
-        line-height: 1.75rem
-    }
-
-    .lg\:text-sm {
-        font-size: .875rem;
-        line-height: 1.25rem
-    }
-}
-
-@media (min-width: 1536px) {
-    .\32xl\:grid-cols-4 {
-        grid-template-columns:repeat(4,minmax(0,1fr))
-    }
-}
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AYB store</title>
+<meta name="description" content="Welcome To AYB store">
+<meta property="og:title" content="AYB store">
+<meta property="og:description" content="Welcome To AYB store">
+<meta property="og:image" content="A YB.png">
+<meta name="twitter:title" content="AYB store">
+<meta name="twitter:description" content="Welcome To AYB store"
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="A YB.png">
+<meta name="theme-color" content="#287eba" />
+    
+    <link href="built.css" rel="stylesheet"/>
+    <link href="custom.css" rel="stylesheet"/>
+
+    <style id="theme-styles">
+      :root {
+        --cl-accent: 0,51,102;
+        --cl-background: 6,6,12;
+        --cl-card: 11,11,17;
+        --cl-t-primary: 255,255,255;
+        --cl-t-accent: 255,255,255;
+      }
+
+      body {
+        font-family: 'Poller One', sans-serif;
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One:wght@300;400;500;600;700&display=swap" rel="stylesheet" id="theme-font">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css" rel="stylesheet" integrity="sha256-gS3HxgWFFFqEo0wQoALebu5XlWdYr3gqd4/Tk5wt8Ig=" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.css" rel="stylesheet" integrity="sha256-qwd4FE0YEnXtN1D9SlLRzgZ35aJTclA5jg1poUQA3dE=" crossorigin="anonymous" />
+      <script>
+      let currentAudio = null;
+      let playlist = [];
+      let currentTrackIndex = 0;
+
+      function addMusic(url) {
+        const audio = new Audio(url);
+        playlist.push({
+          url: url,
+          audio: audio
+        });
+
+        if (!currentAudio) {
+          playTrack(0);
+        }
+      }
+      
+      addMusic('neffex.mp3');
+      
+      // Language translation functionality
+      let currentLang = 'en';
+      const translations = {
+        'en': {
+          'welcome': 'Welcome to AYB store!',
+          'welcome_text': 'Welcome to AYB store the best store in tunisia',
+          'view_products': 'View Products',
+          'main_page': 'Main Page',
+          'products': 'Products',
+          'in_stock': 'In stock',
+          'view_details': 'View Details',
+          'stats_products': 'Products Sold',
+          'stats_customers': 'Total Customers',
+          'stats_reviews': 'Reviews Received',
+          'stats_rating': 'Average Rating',
+          'feature_delivery': 'Fast Delivery',
+          'feature_free': 'FREE',
+          'feature_service': '24/7 customer service',
+          'feature_best': 'best Service',
+          'about_us': 'about us',
+          'footer_text': 'we are a team of developers who are dedicated to providing the best possible service to our customers.',
+          'copyright': 'Copyright © AYB store 2025'
+        },
+        'ar': {
+          'welcome': 'مرحبًا بكم في متجر AYB!',
+          'welcome_text': 'مرحبًا بكم في متجر AYB أفضل متجر في تونس',
+          'view_products': 'عرض المنتجات',
+          'main_page': 'الصفحة الرئيسية',
+          'products': 'المنتجات',
+          'in_stock': 'متوفر',
+          'view_details': 'عرض التفاصيل',
+          'stats_products': 'المنتجات المباعة',
+          'stats_customers': 'إجمالي العملاء',
+          'stats_reviews': 'المراجعات المستلمة',
+          'stats_rating': 'متوسط التقييم',
+          'feature_delivery': 'توصيل سريع',
+          'feature_free': 'مجاني',
+          'feature_service': 'خدمة عملاء على مدار الساعة',
+          'feature_best': 'أفضل خدمة',
+          'about_us': 'معلومات عنا',
+          'footer_text': 'نحن فريق من المطورين المتخصصين في تقديم أفضل خدمة ممكنة لعملائنا.',
+          'copyright': 'حقوق النشر © متجر AYB 2025'
+        },
+        'fr': {
+          'welcome': 'Bienvenue à AYB store!',
+          'welcome_text': 'Bienvenue à AYB store le meilleur magasin en Tunisie',
+          'view_products': 'Voir les produits',
+          'main_page': 'Page Principale',
+          'products': 'Produits',
+          'in_stock': 'En stock',
+          'view_details': 'Voir les détails',
+          'stats_products': 'Produits Vendus',
+          'stats_customers': 'Clients Totaux',
+          'stats_reviews': 'Avis Reçus',
+          'stats_rating': 'Note Moyenne',
+          'feature_delivery': 'Livraison Rapide',
+          'feature_free': 'GRATUIT',
+          'feature_service': 'Service client 24/7',
+          'feature_best': 'Meilleur service',
+          'about_us': 'à propos de nous',
+          'footer_text': 'Nous sommes une équipe de développeurs dédiés à fournir le meilleur service possible à nos clients.',
+          'copyright': 'Copyright © AYB store 2025'
+        }
+      };
+      
+      function changeLang(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        
+        // Update all elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+          const key = element.getAttribute('data-i18n');
+          if (translations[lang][key]) {
+            element.innerHTML = translations[lang][key];
+          }
+        });
+      }
+
+      function playTrack(index) {
+        if (currentAudio) {
+          currentAudio.pause();
+        }
+
+        const track = playlist[index];
+        if (!track) return;
+
+        currentAudio = track.audio;
+        currentTrackIndex = index;
+
+        currentAudio.addEventListener('ended', () => {
+          // Play next track when current one ends
+          playTrack((currentTrackIndex + 1) % playlist.length);
+        });
+
+        currentAudio.play();
+      }
+
+      // Example usage:
+      // To add a music track, call: addMusic('path/to/music.mp3');
+    </script>
+  </head>
+  <body style="background-color: rgb(0, 0, 0);">
+    
+
+    <div id="particles-js" class="fixed inset-0 z-0 size-full"></div>
+    
+    <!-- Music Player -->
+    <div class="fixed bottom-4 right-4 z-50 bg-card/90 p-4 rounded-lg border border-white/10 shadow-lg">
+      
+     
+    </div>
+    
+    <div id="app" x-data="app">
+      <div class="announcement component " data-component-id="announcement">
+  <div class="p-2 text-t-accent text-sm text-center bg-accent-500 border border-accent-600">
+    <div
+      x-data="{
+        duration: 3000,
+        activeIndex: 0,
+        interval: null,
+        startInterval() {
+          this.interval = setInterval(() => {
+            this.activeIndex = (this.activeIndex + 1) % 3;
+          }, this.duration);
+        }
+      }"
+      x-init="startInterval"
+      class="overflow-hidden h-5"
+    >
+      
+        <p
+          x-show="activeIndex === 0"
+          
+          class="font-medium text-center animate-announcement-fade truncate line-clamp-1"
+        >
+          <a
+  href="#"
+  target=""
+  class="truncate line-clamp-1">
+  <span class="truncate">💥 best products</span>
+  <svg class="ml-2 size-4 inline-block align-[-0.125rem] hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="max-width: 16px;">
+    <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd"></path>
+    <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd"></path>
+  </svg>
+</a>
+        </p>
+      
+        <p
+          x-show="activeIndex === 1"
+          x-cloak
+          class="font-medium text-center animate-announcement-fade truncate line-clamp-1"
+        >
+          <a
+  href="#"
+  target=""
+  class="truncate line-clamp-1">
+  <span class="truncate">🔥 a7ssen store fi tounis</span>
+  <svg class="ml-2 size-4 inline-block align-[-0.125rem] hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="max-width: 16px;">
+    <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd"></path>
+    <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd"></path>
+  </svg>
+</a>
+        </p>
+      
+        <p
+          x-show="activeIndex === 2"
+          x-cloak
+          class="font-medium text-center animate-announcement-fade truncate line-clamp-1"
+        >
+          <a
+  href="https://discord.gg/aKYSNDAEXY"
+  target="_blank"
+  class="truncate line-clamp-1">
+  <span class="truncate">ija discord</span>
+  <svg class="ml-2 size-4 inline-block align-[-0.125rem] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="max-width: 16px;">
+    <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd"></path>
+    <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd"></path>
+  </svg>
+</a>
+        </p>
+      
+    </div>
+  </div>
+</div>
+      <div class="flex flex-col justify-between max-w-[85rem] min-h-screen mx-auto p-4 relative md:p-6 lg:p-8">
+        <div>
+          <nav
+  class="component"
+  data-component-id="navbar"
+  x-data="{
+    isCollapsed: true,
+    menuHeight: 0
+  }"
+ 
+    
+  <!-- Language Selector -->
+  <div class="lang-selector" style="margin-left: 15px;">
+    <button onclick="changeLang('en')" class="lang-btn">EN</button>
+    <button onclick="changeLang('ar')" class="lang-btn">عربي</button>
+    <button onclick="changeLang('fr')" class="lang-btn">FR</button>
+  </div>
+
+
+> <div class="picatshuu">
+  
+
+
+
+
+</div>
+  <div class="bg-card/75 border border-white/5">
+    <div class="flex items-center justify-between flex-wrap w-full">
+      <div class="flex items-center p-4 md:p-6">
+        
+          <a href="index.html" class="flex items-center justify-center gap-4 md:justify-start">
+            
+            <div class="spiner" align="center">
+              <img src="A YB.png" >
+              <p></p>
+          </div>
+          
+            
+            
+          </a>
+          <a href="https://discord.gg/aKYSNDAEXY" class="dis">
+ 
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          <a href="https://www.instagram.com/a7med__.exe/" class="insta">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          
+        
+        
+      </div>
+
+      <div class="flex items-center gap-4 mr-4">
+        
+          <a href="#" class="inline-flex items-center justify-center size-10 relative bg-card border border-white/5 text-t-primary/75 text-base transition-all ease-in-out duration-150 md:hidden hover:bg-accent-500/10 hover:text-accent-500 focus:outline-none">
+            <i class="fa fa-cart-shopping"></i>
+            <template x-if="appCart.countWithQuantities > 0">
+              <span class="absolute -top-2 -right-2 inline-flex items-center justify-center size-[1.125rem] bg-accent-500 text-white text-[0.625rem] rounded-full">
+                <span x-text="appCart.countWithQuantities > 9 ? '9+' : appCart.countWithQuantities"></span>
+              </span>
+            </template>
+          </a>
+        
+        <button
+          type="button" 
+          x-on:click="isCollapsed = !isCollapsed; $nextTick(() => menuHeight = isCollapsed ? 0 : $refs.menu.scrollHeight)" 
+          class="inline-flex items-center justify-center size-10 bg-card border border-white/5 text-t-primary/75 text-sm transition-all ease-in-out duration-150 md:hidden hover:bg-accent-500/10 hover:text-accent-500 focus:outline-none"
+        >
+          <svg class="size-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        x-ref="menu" 
+        class="w-full overflow-hidden transition-all duration-150 ease-in-out md:w-auto md:!h-auto"
+        x-bind:style="{ height: isCollapsed ? '0px' : menuHeight + 'px' }"
+        x-cloak
+      >
+        <div class="flex flex-col gap-2 p-2 md:flex-row md:justify-between md:items-center md:gap-4 md:p-6">
+          
+          
+          
+          
+          
+
+          
+          
+          
+
+          <a
+            href="index.html"
+            target=""
+            class="px-4 py-2 whitespace-nowrap text-base font-medium text-white"
+          >
+            <span data-i18n="main_page">Main Page</span>
+          </a>
+          
+          
+          
+
+       
+          
+          
+
+          <a
+            href="#products"
+            target=""
+            class="px-4 py-2 whitespace-nowrap text-base font-medium text-t-primary/80 hover:text-white"
+          >
+            <span data-i18n="products">Products</span>
+          </a>
+          
+          
+          
+
+          
+          
+          
+
+         
+          
+          
+          
+
+          
+          
+          
+
+       
+          
+          
+
+          
+          
+          
+
+        
+          
+           
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+          <div class="components">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="hero" class="component" data-component-id="hero">
+  <div class="relative flex justify-center items-center py-24 ">
+    <div class="container relative flex gap-12 items-center px-4 flex-col md:flex-row-reverse md:justify-between">
+      <div class="flex flex-col gap-4 max-w-md text-right">
+        
+          <h1 class="text-3xl font-bold text-t-primary mb-3 md:text-4xl lg:text-5xl" data-i18n="welcome">
+            Welcome to <span class="text-accent-500">AYB store</span>!
+          </h1>
+        
+        
+          <p class="text-base text-t-primary/75 mb-3 md:text-lg" data-i18n="welcome_text">
+            Welcome to AYB store the best store in tunisia 
+          </p>
+          <p>
+
+
+
+
+
+
+
+
+
+
+
+          </p>
+        
+        
+          
+
+
+
+
+
+
+<div
+  class="mb-4"
+  x-data="{
+    searchTerm: '',
+    isModalOpen: false,
+    openModal() {
+      this.isModalOpen = true;
+      document.body.style.overflow = 'hidden';
+
+      setTimeout(() => {
+        this.$refs.searchInput.focus();
+      }, 100);
+    },
+    closeModal() {
+      this.isModalOpen = false;
+      document.body.style.overflow = 'auto';
+    }
+  }">
+  <div class="bg-card/75 border border-white/5">
+    <div class="flex items-center gap-4 max-w-xl text-t-primary/80 text-sm p-3 cursor-pointer transform transition-colors duration-150 ease-in-out hover:bg-white/[0.025] focus-within:ring-2 focus-within:ring-accent-500 ml-auto" @click="openModal">
+      <svg class="size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m29 27.586l-7.552-7.552a11.018 11.018 0 1 0-1.414 1.414L27.586 29ZM4 13a9 9 0 1 1 9 9a9.01 9.01 0 0 1-9-9"/></svg>
+      <input type="text" class="bg-transparent cursor-pointer focus:outline-none" placeholder="Search for products..." readonly />
+    </div>
+  </div>
+
+  <div x-show="isModalOpen" class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen px-4 text-center">
+      <div x-cloak @click="closeModal" x-show="isModalOpen"
+        x-transition:enter="transition ease-out duration-300 transform"
+        x-transition:enter-start="opacity-0" 
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-200 transform"
+        x-transition:leave-start="opacity-100" 
+        x-transition:leave-end="opacity-0"
+        class="fixed inset-0 transition-opacity bg-black/75" aria-hidden="true"
+      ></div>
+
+      <div x-cloak x-show="isModalOpen" 
+        x-transition:enter="transition ease-out duration-300 transform"
+        x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" 
+        x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+        x-transition:leave="transition ease-in duration-200 transform"
+        x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" 
+        x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        class="inline-block w-full max-w-[76rem] transition-all transform"
+      >
+        <div class="overflow-hidden text-t-primary text-left border border-white/5 bg-background p-4 md:p-6">
+          <div class="flex items-center justify-between gap-4 mb-4 sm:mb-6">
+            <div class="flex-1 flex items-center gap-4 bg-white/[0.025] border border-white/5 text-t-primary/80 text-sm p-3 focus-within:ring-2 focus-within:ring-accent-500 ml-auto">
+              <svg class="size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m29 27.586l-7.552-7.552a11.018 11.018 0 1 0-1.414 1.414L27.586 29ZM4 13a9 9 0 1 1 9 9a9.01 9.01 0 0 1-9-9"/></svg>
+              <input type="text" class="bg-transparent focus:outline-none" placeholder="Search for products..." x-ref="searchInput" x-model="searchTerm">
+            </div>
+
+            <button @click="closeModal" class="flex items-center justify-center size-[2.875rem] bg-white/[0.025] border border-white/5 text-t-primary/75 transition-colors ease-in-out duration-150 focus:outline-none hover:text-accent-500 hover:bg-accent-500/10">
+              <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4" x-ref="productsContainer">
+            
+              
+                <div x-show="searchTerm == '' || 'pc optimizer'.includes(searchTerm.toLowerCase())">
+                  <a
+  class="block h-full bg-card/75 border border-white/5 text-t-primary group"
+  href="op.html"
+  @click=""
+>
+  <div class="h-full transform transition-colors duration-150 ease-in-out group-hover:bg-white/[0.025]">
+    <div class="text-center px-4 py-2 border-b border-white/5">
+      <h3 class="text-lg font-bold truncate">
+        pc optimizer
+      </h3>
+      
+    </div>
+    <div class="relative overflow-hidden p-2 mb-4 border-b border-white/5">
+      
+      <img src="1 prj.png" class="aspect-video w-full object-scale-down" loading="lazy" />
+      
+    </div>
+    <div class="text-left px-4 pb-4">
+      <div class="flex items-center justify-between gap-2 truncate mb-4">
+        <p class="text-base font-semibold text-t-primary/50 truncate">
+          <span class="text-accent-500">
+            
+            0.00 TND
+            
+          </span>
+
+          
+          
+          <span class="text-xs line-through">10.00 TND</span>
+          
+          
+        </p>
+        <p class="text-base text-t-primary/50">
+          
+            
+            <span data-i18n="in_stock">In stock</span>
+            
+          
+        </p>
+      </div>
+      <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
+        <span data-i18n="view_details">View Details</span>
+        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</a>
+</div>
+
+
+
+<div x-show="searchTerm == '' || 'PY TO EXE TOOL'.includes(searchTerm.toLowerCase())">
+  <a
+class="block h-full bg-card/75 border border-white/5 text-t-primary group"
+href="py to exe.html"
+@click=""
+>
+<div class="h-full transform transition-colors duration-150 ease-in-out group-hover:bg-white/[0.025]">
+<div class="text-center px-4 py-2 border-b border-white/5">
+<h3 class="text-lg font-bold truncate">
+PY TO EXE TOOL
+</h3>
+
+</div>
+<div class="relative overflow-hidden p-2 mb-4 border-b border-white/5">
+
+<img src="cnv.png" class="aspect-video w-full object-scale-down" loading="lazy" />
+
+</div>
+<div class="text-left px-4 pb-4">
+<div class="flex items-center justify-between gap-2 truncate mb-4">
+<p class="text-base font-semibold text-t-primary/50 truncate">
+<span class="text-accent-500">
+
+0.00 TND
+
+</span>
+
+
+
+<span class="text-xs line-through">9.99 TND</span>
+
+
+</p>
+<p class="text-base text-t-primary/50">
+
+
+In stock
+
+
+</p>
+</div>
+<div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
+  View Details
+<svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
+</div>
+</div>
+</div>
+</a>
+
+
+
+
+
+
+</a>
+                </div>
+              
+            
+              
+                <div x-show="searchTerm == '' || 'DPI custum tool'.includes(searchTerm.toLowerCase())">
+                  <a
+  class="block h-full bg-card/75 border border-white/5 text-t-primary group"
+  href="DPI.html"
+  @click=""
+>
+  <div class="h-full transform transition-colors duration-150 ease-in-out group-hover:bg-white/[0.025]">
+    <div class="text-center px-4 py-2 border-b border-white/5">
+      <h3 class="text-lg font-bold truncate">
+        DPI custum tool
+      </h3>
+      
+    </div>
+    <div class="relative overflow-hidden p-2 mb-4 border-b border-white/5">
+      
+      <img src="DPI cuume tool.png" class="aspect-video w-full object-scale-down" loading="lazy" />
+      
+    </div>
+    <div class="text-left px-4 pb-4">
+      <div class="flex items-center justify-between gap-2 truncate mb-4">
+        <p class="text-base font-semibold text-t-primary/50 truncate">
+          <span class="text-accent-500">
+            
+            0.00 TND
+            
+          </span>
+
+          
+          
+          <span class="text-xs line-through">9.99 TND</span>
+          
+          
+        </p>
+        <p class="text-base text-t-primary/50">
+          
+            
+            <span data-i18n="in_stock">In stock</span>
+            
+          
+        </p>
+      </div>
+      <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
+        <span data-i18n="view_details">View Details</span>
+        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
+      </div>
+    </div>
+  </div>
+</a>
+                </div>
+              
+            
+              
+                <div x-show="searchTerm == '' || 'CUSTUM WEB SITE'.includes(searchTerm.toLowerCase())">
+                  <a
+  class="block h-full bg-card/75 border border-white/5 text-t-primary group"
+  href="customweb.html"
+  @click=""
+>
+  <div class="h-full transform transition-colors duration-150 ease-in-out group-hover:bg-white/[0.025]">
+    <div class="text-center px-4 py-2 border-b border-white/5">
+      <h3 class="text-lg font-bold truncate">
+        CUSTUM WEB SITE
+      </h3>
+      
+    </div>
+    <div class="relative overflow-hidden p-2 mb-4 border-b border-white/5">
+      
+      <img src="CUSTUM WEB SITE.png" class="aspect-video w-full object-scale-down" loading="lazy" />
+      
+    </div>
+    <div class="text-left px-4 pb-4">
+      <div class="flex items-center justify-between gap-2 truncate mb-4">
+        <p class="text-base font-semibold text-t-primary/50 truncate">
+          <span class="text-accent-500">
+            
+            15.00 TND
+            
+          </span>
+
+          
+          
+          <span class="text-xs line-through">25.00 TND</span>
+          
+          
+        </p>
+        <p class="text-base text-t-primary/50">
+          
+            
+            <span class="inline-flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-accent-500 size-4" fill="currentColor" viewBox="0 0 256 256"><path d="M248,128a56,56,0,0,1-95.6,39.6l-.33-.35L92.12,99.55a40,40,0,1,0,0,56.9l8.52-9.62a8,8,0,1,1,12,10.61l-8.69,9.81-.33.35a56,56,0,1,1,0-79.2l.33.35,59.95,67.7a40,40,0,1,0,0-56.9l-8.52,9.62a8,8,0,1,1-12-10.61l8.69-9.81.33-.35A56,56,0,0,1,248,128Z"></path></svg>
+              in stock
+            </span>
+            
+          
+        </p>
+      </div>
+      <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
+        <span data-i18n="view_details">View Details</span>
+
+        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
+      </div>
+    </div>
+  </div>
+</a>
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        
+          <div class="flex flex-wrap items-center gap-4 mt-3 justify-end">
+            
+  
+  
+  
+  <a
+    href="#products"
+    target=""
+    class="inline-flex items-center gap-4 border px-6 py-2 text-sm font-semibold transition-colors ease-in-out duration-150 text-accent-500 border-accent-500 hover:bg-accent-500/10">
+    <span data-i18n="view_products">View Products</span>
+    
+    <i class="fas fa-cart-shopping fa-fw"></i>
+    
+  </a>
+
+          </div>
+        
+      </div>
+      
+        <div class="spiner1">
+          <img src="A YB.png" alt="" class="max-w-full" />
+        </div>
+      
+    </div>
+  </div>
+</section>
+  
+    <section
+  id="products"
+  class="component"
+  data-component-id="products"
+  x-data="{
+    searchTerm: '',
+    openGroupModalId: null,
+    openGroupModal(id) {
+      this.openGroupModalId = id;
+      document.body.style.overflow = 'hidden';
+    },
+    closeGroupModal() {
+      this.openGroupModalId = null;
+      document.body.style.overflow = 'auto';
+    }
+  }">
+  <div class="py-6 lg:py-8">
+    
+
+    
+
+    <div class="w-full grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+      
+        
+          
+            <div x-show="searchTerm == '' || 'optimizer tool'.includes(searchTerm.toLowerCase())">
+              <a
+  class="block h-full bg-card/75 border border-white/5 text-t-primary group"
+  href="op.html"
+  @click=""
+>
+  <div class="h-full transform transition-colors duration-150 ease-in-out group-hover:bg-white/[0.025]">
+    <div class="text-center px-4 py-2 border-b border-white/5">
+      <h3 class="text-lg font-bold truncate">
+       Optimizer Tool
+      </h3>
+      
+    </div>
+    <div class="relative overflow-hidden p-2 mb-4 border-b border-white/5">
+      
+      <img src="1 prj.png" class="aspect-video w-full object-scale-down" loading="lazy" />
+      
+    </div>
+    <div class="text-left px-4 pb-4">
+      <div class="flex items-center justify-between gap-2 truncate mb-4">
+        <p class="text-base font-semibold text-t-primary/50 truncate">
+          <span class="text-accent-500">
+            
+            0.00 TND
+            
+          </span>
+
+          
+          
+          <span class="text-xs line-through">0.00 TND</span>
+          
+          
+        </p>
+        <p class="text-base text-t-primary/50">
+          
+            
+            <span data-i18n="in_stock">In stock</span>
+            
+          
+        </p>
+      </div>
+      <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
+        <span data-i18n="view_details">View Details</span>
+        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
+      </div>
+    </div>
+  </div>
+
+</a>
+</div>
+
+
+
+<div x-show="searchTerm == '' || 'DPI custum tool'.includes(searchTerm.toLowerCase())">
+  <a
+class="block h-full bg-card/75 border border-white/5 text-t-primary group"
+href="DPI.html"
+@click=""
+>
+<div class="h-full transform transition-colors duration-150 ease-in-out group-hover:bg-white/[0.025]">
+<div class="text-center px-4 py-2 border-b border-white/5">
+<h3 class="text-lg font-bold truncate">
+DPI custum tool
+</h3>
+
+</div>
+<div class="relative overflow-hidden p-2 mb-4 border-b border-white/5">
+
+<img src="DPI cuume tool.png" class="aspect-video w-full object-scale-down" loading="lazy" />
+
+</div>
+<div class="text-left px-4 pb-4">
+<div class="flex items-center justify-between gap-2 truncate mb-4">
+
+<p class="text-base font-semibold text-t-primary/50 truncate">
+<span class="text-accent-500">
+
+  0.00 TND
+
+</span>
+
+
+
+<span class="text-xs line-through">9.99 TND</span>
+
+
+</p>
+<p class="text-base text-t-primary/50">
+
+
+In stock
+
+
+</p>
+</div>
+<div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
+View Details
+<svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
+</div>
+</div>
+</div>
+</a>
+
+
+
+
+
+
+  
+</a>
+            </div>
+          
+        
+          
+            <div x-show="searchTerm == '' || 'PY TO EXE TOOL'.includes(searchTerm.toLowerCase())">
+              <a
+  class="block h-full bg-card/75 border border-white/5 text-t-primary group"
+  href="py to exe.html"
+  @click=""
+>
+  <div class="h-full transform transition-colors duration-150 ease-in-out group-hover:bg-white/[0.025]">
+    <div class="text-center px-4 py-2 border-b border-white/5">
+      <h3 class="text-lg font-bold truncate">
+        PY TO EXE TOOL
+      </h3>
+      
+    </div>
+    <div class="relative overflow-hidden p-2 mb-4 border-b border-white/5">
+      
+      <img src="cnv.png" class="aspect-video w-full object-scale-down" loading="lazy" />
+      
+    </div>
+    <div class="text-left px-4 pb-4">
+      <div class="flex items-center justify-between gap-2 truncate mb-4">
+        
+        <p class="text-base font-semibold text-t-primary/50 truncate">
+          <span class="text-accent-500">
+            
+              0.00 TND
+            
+          </span>
+
+          
+          
+          <span class="text-xs line-through">9.99 TND</span>
+          
+          
+        </p>
+        <p class="text-base text-t-primary/50">
+          
+            
+            <span data-i18n="in_stock">In stock</span>
+            
+          
+        </p>
+      </div>
+      <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
+        <span data-i18n="view_details">View Details</span>
+        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
+      </div>
+    </div>
+  </div>
+</a>
+            </div>
+          
+        
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+          
+            <div x-show="searchTerm == '' || 'CUSTUM WEB SITE'.includes(searchTerm.toLowerCase())">
+              <a
+  class="block h-full bg-card/75 border border-white/5 text-t-primary group"
+  href="customweb.html"
+  @click=""
+>
+  <div class="h-full transform transition-colors duration-150 ease-in-out group-hover:bg-white/[0.025]">
+    <div class="text-center px-4 py-2 border-b border-white/5">
+      <h3 class="text-lg font-bold truncate">
+        CUSTUM WEB SITE
+      </h3>
+      
+    </div>
+    <div class="relative overflow-hidden p-2 mb-4 border-b border-white/5">
+      
+      <img src="CUSTUM WEB SITE.png" class="aspect-video w-full object-scale-down" loading="lazy" />
+      
+    </div>
+    <div class="text-left px-4 pb-4">
+      <div class="flex items-center justify-between gap-2 truncate mb-4">
+        <p class="text-base font-semibold text-t-primary/50 truncate">
+          <span class="text-accent-500">
+            
+            15.00 TND
+            
+          </span>
+
+          
+          
+          <span class="text-xs line-through">25.00 TND</span>
+          
+          
+        </p>
+        <p class="text-base text-t-primary/50">
+          
+            
+            <span class="inline-flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-accent-500 size-4" fill="currentColor" viewBox="0 0 256 256"><path d="M248,128a56,56,0,0,1-95.6,39.6l-.33-.35L92.12,99.55a40,40,0,1,0,0,56.9l8.52-9.62a8,8,0,1,1,12,10.61l-8.69,9.81-.33.35a56,56,0,1,1,0-79.2l.33.35,59.95,67.7a40,40,0,1,0,0-56.9l-8.52,9.62a8,8,0,1,1-12-10.61l8.69-9.81.33-.35A56,56,0,0,1,248,128Z"></path></svg>
+              in stock
+            </span>
+            
+          
+        </p>
+      </div>
+      <div class="flex items-center justify-center gap-2 text-accent-500 text-center font-semibold border border-accent-500 px-4 py-1 transition-colors duration-150 ease-in-out hover:bg-accent-500 hover:text-white">
+        <span data-i18n="view_details">View Details</span>
+        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="m18 6l-1.43 1.393L24.15 15H4v2h20.15l-7.58 7.573L18 26l10-10z"/></svg>
+      </div>
+    </div>
+  </div>
+</a>
+            </div>
+          
+        
+      
+    </div>
+  </div>
+
+  
+    
+  
+    
+  
+    
+  
+</section>
+  
+    <section id="stats" class="component" data-component-id="stats">
+  <div class="py-6 lg:py-8">
+    
+
+    <div class="w-full grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+      <div class="text-center border-b-2 border-white/5 py-4 lg:py-6">
+        <p class="mb-1 text-3xl text-accent-500 font-bold uppercase md:mb-1.5 md:text-4xl lg:text-5xl lg:mb-2">
+          149
+        </p>
+        <p class="text-sm font-normal uppercase text-t-primary/80 md:text-base">
+          <span data-i18n="stats_products">Products Sold</span>
+        </p>
+      </div>
+      <div class="text-center border-b-2 border-white/5 py-4 lg:py-6">
+        <p class="mb-1 text-3xl text-accent-500 font-bold uppercase md:mb-1.5 md:text-4xl lg:text-5xl lg:mb-2">
+          141
+        </p>
+        <p class="text-sm font-normal uppercase text-t-primary/80 md:text-base">
+          <span data-i18n="stats_customers">Total Customers</span>
+        </p>
+      </div>
+      <div class="text-center border-b-2 border-white/5 py-4 lg:py-6">
+        <p class="mb-1 text-3xl text-accent-500 font-bold uppercase md:mb-1.5 md:text-4xl lg:text-5xl lg:mb-2">
+          70
+        </p>
+        <p class="text-sm font-normal uppercase text-t-primary/80 md:text-base">
+          <span data-i18n="stats_reviews">Reviews Received</span>
+        </p>
+      </div>
+      <div class="text-center border-b-2 border-white/5 py-4 lg:py-6">
+        <p class="mb-1 text-3xl text-accent-500 font-bold uppercase md:mb-1.5 md:text-4xl lg:text-5xl lg:mb-2">
+          4.8
+        </p>
+        <p class="text-sm font-normal uppercase text-t-primary/80 md:text-base">
+          <span data-i18n="stats_rating">Average Rating</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+  
+    <section id="features" class="component" data-component-id="features">
+  <div class="py-6 lg:py-8">
+    
+
+    <div class="w-full grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+      
+        <div class="text-center bg-card/75 border border-white/5 p-4 lg:p-6">
+          <i class="mb-2 text-accent-500 text-xl mb:mb-3 md:text-2xl lg:mb-4 lg:text-3xl fas fa-truck"></i>
+          <h4 class="mb-1 text-base text-t-primary font-semibold uppercase mb:mb-1.5 lg:text-lg lg:mb-2">
+            <span data-i18n="feature_delivery">Fast Delivery</span>
+          </h4>
+          <p class="text-xs font-normal text-t-primary/80 lg:text-sm">
+           
+
+
+          </p>
+        </div>
+      
+        <div class="text-center bg-card/75 border border-white/5 p-4 lg:p-6">
+          <i class="mb-2 text-accent-500 text-xl mb:mb-3 md:text-2xl lg:mb-4 lg:text-3xl fas fa-shield"></i>
+          <h4 class="mb-1 text-base text-t-primary font-semibold uppercase mb:mb-1.5 lg:text-lg lg:mb-2">
+            <span data-i18n="feature_free">FREE</span>
+          </h4>
+          <p class="text-xs font-normal text-t-primary/80 lg:text-sm">
+            
+          </p>
+        </div>
+      
+        <div class="text-center bg-card/75 border border-white/5 p-4 lg:p-6">
+          <i class="mb-2 text-accent-500 text-xl mb:mb-3 md:text-2xl lg:mb-4 lg:text-3xl fas fa-clock"></i>
+          <h4 class="mb-1 text-base text-t-primary font-semibold uppercase mb:mb-1.5 lg:text-lg lg:mb-2">
+            <span data-i18n="feature_service">24/7 customer service</span>
+          </h4>
+          <p class="text-xs font-normal text-t-primary/80 lg:text-sm">
+            
+          </p>
+        </div>
+      
+        <div class="text-center bg-card/75 border border-white/5 p-4 lg:p-6">
+          <i class="mb-2 text-accent-500 text-xl mb:mb-3 md:text-2xl lg:mb-4 lg:text-3xl fas fa-box"></i>
+          <h4 class="mb-1 text-base text-t-primary font-semibold uppercase mb:mb-1.5 lg:text-lg lg:mb-2">
+            <span data-i18n="feature_best">best Service</span>
+          </h4>
+          <p class="text-xs font-normal text-t-primary/80 lg:text-sm">
+            
+          </p>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+</div>
+    </div>
+    <footer class="mt-6 bg-card/90 border border-white/5 lg:mt-8">
+<div class="max-w-[85rem] mx-auto text-t-primary">
+
+  <div class="flex flex-wrap items-center justify-between gap-4 border-b px-4 py-4 border-white/5">
+    <a href="#" class="flex items-center gap-2 md:gap-4">
+      
+      
+        <p class="text-white font-semibold text-lg md:text-xl" data-i18n="about_us">about us</p>
+      
+    </a>
+    <div class="flex gap-3">
+      
+        
+      
+        
+
+        
+
+        
+         
+        
+      </div>
+    
+  </div>
+
+<div class="flex flex-col flex-wrap gap-4 px-4 py-4 bg-card/25 sm:flex-row sm:items-center sm:justify-between">
+  <p class="text-sm text-t-primary/80">
+    
+    <span data-i18n="footer_text">we are a team of developers who are dedicated to providing the best possible service to our customers.</span>
+    
+  </p>
+  <div class="flex gap-3">
+    
+      
+     
+      </a>
+      
+    
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+        </div>
+        <footer class="mt-6 bg-card/90 border border-white/5 lg:mt-8">
+  <div class="max-w-[85rem] mx-auto text-t-primary">
+    
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b px-4 py-4 border-white/5">
+        <a href="#" class="flex items-center gap-2 md:gap-4">
+          
+          
+            <p class="text-white font-semibold text-lg md:text-xl">AYB store</p>
+          
+        </a>
+        <div class="flex gap-3">
+          
+            
+              <a href="https://discord.gg/aKYSNDAEXY" target="blank" class="size-8 flex *:m-auto rounded-full text-t-primary/80 hover:text-[#5865f2]">
+                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/></svg>
+              </a>
+            
+
+            
+
+            
+              <a href="https://www.instagram.com/a7med__.exe/" target="blank" class="size-8 flex *:m-auto rounded-full text-t-primary/80 hover:text-[#de2662]">
+                <svg class="size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+              </a>
+            
+
+            
+
+            
+             
+            
+          </div>
+        
+      </div>
+    
+    <div class="flex flex-col flex-wrap gap-4 px-4 py-4 bg-card/25 sm:flex-row sm:items-center sm:justify-between">
+      <p class="text-sm text-t-primary/80">
+        
+          <span data-i18n="copyright">Copyright &copy; AYB store 2025</span>
+        
+      </p>
+      <div class="flex gap-3">
+        
+          
+         
+          </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</footer>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('alpine:init', () => {
+        Alpine.data('app', () => ({
+          appCart: {
+            items: [],
+            updateLocalStorage: function () {
+              localStorage.setItem('cart', JSON.stringify(this.items));
+            },
+            set: function (items) {
+              this.items = items;
+
+              this.updateLocalStorage();
+            },
+            add: function (productId, variantId, quantity) {
+              const item = this.items.find((item) => item.variantId === variantId);
+
+              if (item) {
+                item.quantity += quantity;
+              } else {
+                this.items.push({ productId, variantId, quantity });
+              }
+
+              this.updateLocalStorage();
+            },
+            remove: function (variantId) {
+              this.items = this.items.filter((item) => item.variantId !== variantId);
+
+              this.updateLocalStorage();
+            },
+            editQuantity: function (variantId, quantity) {
+              const item = this.items.find((item) => item.variantId === variantId);
+              item.quantity = quantity;
+
+              this.updateLocalStorage();
+            },
+            get countWithQuantities() {
+              return this.items.reduce((acc, item) => acc + item.quantity, 0);
+            },
+            init: function () {
+              if (localStorage.getItem('cart')) {
+                try {
+                  this.items = JSON.parse(localStorage.getItem('cart'));
+                  if (!Array.isArray(this.items)) {
+                    this.items = [];
+                  }
+                } catch (error) {
+                  console.error('Error parsing cart from local storage', error);
+                  this.items = [];
+                }
+              }
+            }
+          },
+
+          init: function () {
+            this.appCart.init();
+          }
+        }));
+      });
+    </script>
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"
+      integrity="sha256-aJ9ROXjRHWn00zeU9ylsmlhqLlXeebtEfN28P0dPnwc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+      integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js"
+      integrity="sha256-P+JgcxEeZtxwYS1+TAAuusKFM646SB8Oodk0TYu9zuo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.js"
+      integrity="sha256-t8Thbv2D6x0AC5rMk+Ydz589Zq4lp8ZC4iVfNNdxs5U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"
+      integrity="sha256-icjghcPaibMf1jv4gQIGi5MeWNHem2SispcorCiCfSg="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src=" "
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      particlesJS({
+        "particles": {
+          "number": {
+            "value": 50,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#26115c"
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 1,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": false,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": false,
+              "mode": "push"
+            },
+            "resize": true  
+          }
+        },
+        "retina_detect": true
+      });
+    </script>
+
+    
+      <script src="snow.js"></script>
+    
+
+    
+
+
+
+
+  <!-- Hidden Music Player - Add your songs here -->
+  <script>
+    // Add songs to play in the background
+    document.addEventListener('DOMContentLoaded', function() {
+      // We already added neffex.mp3 in the head section
+      // The song will start playing automatically
+      
+      // Add additional songs to the playlist
+      addMusic('wassa3.mp3');
+      
+      // Initialize the default language
+      changeLang('en');
+    });
+  </script>
+  </body>
+</html>

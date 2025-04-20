@@ -39,6 +39,47 @@
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css" rel="stylesheet" integrity="sha256-gS3HxgWFFFqEo0wQoALebu5XlWdYr3gqd4/Tk5wt8Ig=" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.css" rel="stylesheet" integrity="sha256-qwd4FE0YEnXtN1D9SlLRzgZ35aJTclA5jg1poUQA3dE=" crossorigin="anonymous" />
+      <script>
+      let currentAudio = null;
+      let playlist = [];
+      let currentTrackIndex = 0;
+
+      function addMusic(url) {
+        const audio = new Audio(url);
+        playlist.push({
+          url: url,
+          audio: audio
+        });
+
+        if (!currentAudio) {
+          playTrack(0);
+        }
+      }
+      
+      addMusic('music/neffex.mp3');
+
+      function playTrack(index) {
+        if (currentAudio) {
+          currentAudio.pause();
+        }
+
+        const track = playlist[index];
+        if (!track) return;
+
+        currentAudio = track.audio;
+        currentTrackIndex = index;
+
+        currentAudio.addEventListener('ended', () => {
+          // Play next track when current one ends
+          playTrack((currentTrackIndex + 1) % playlist.length);
+        });
+
+        currentAudio.play();
+      }
+
+      // Example usage:
+      // To add a music track, call: addMusic('path/to/music.mp3');
+    </script>
   </head>
   <body style="background-color: rgb(0, 0, 0);">
     
@@ -47,10 +88,7 @@
     
     <!-- Music Player -->
     <div class="fixed bottom-4 right-4 z-50 bg-card/90 p-4 rounded-lg border border-white/10 shadow-lg">
-      <audio id="music-player" controls>
-        <source src="wassa3.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+      
      
     </div>
     
@@ -152,7 +190,7 @@
           <a href="index.html" class="flex items-center justify-center gap-4 md:justify-start">
             
               <img
-                src="A YB.png"
+                src="aa3.png"
                 alt="AYB store"
                 class="max-h-10"
               />
@@ -1139,7 +1177,7 @@ View Details
     <div class="flex flex-col flex-wrap gap-4 px-4 py-4 bg-card/25 sm:flex-row sm:items-center sm:justify-between">
       <p class="text-sm text-t-primary/80">
         
-          Copyright © AYB store 2025
+          Copyright &copy; AYB store 2025
         
       </p>
       <div class="flex gap-3">
@@ -1329,5 +1367,18 @@ View Details
 
 
 
+  <!-- Hidden Music Player - Add your songs here -->
+  <script>
+    // Example: Add songs to play in the background
+    // You can add your own music files here
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add neffex.mp3 to the playlist
+      addMusic('neffex.mp3');
+      
+      // You can add more songs if needed
+      // addMusic('music/song2.mp3');
+      // addMusic('music/song3.mp3');
+    });
+  </script>
   </body>
 </html>
